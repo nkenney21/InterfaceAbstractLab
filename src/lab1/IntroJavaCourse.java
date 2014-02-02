@@ -6,28 +6,16 @@ package lab1;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
-    private String courseNumber;
-    private double credits;
+public class IntroJavaCourse extends CourseStructure{
+    
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
-    }
-
-    public double getCredits() {
-        return credits;
-    }
+  
 
 
     public String getPrerequisites() {
@@ -38,6 +26,11 @@ public class IntroJavaCourse {
         this.prerequisites = prerequisites;
     }
 
+    /**
+     *
+     * @param credits
+     */
+    @Override
         public void setCredits(double credits) {
         if(credits < 0 || credits > 5.0) {
             System.out.println(
