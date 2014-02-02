@@ -8,14 +8,15 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse implements CourseStructure{
+public final class IntroToProgrammingCourse implements CourseStructure{
     private String courseName;
     private String courseNumber;
     private double credits;
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
+        this.setCredits(credits);
     }
 
     public String getCourseNumber() {
@@ -48,29 +49,13 @@ public class IntroToProgrammingCourse implements CourseStructure{
         return courseName;
     }
 
-   
-
-   
-
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
         }
-        this.courseName = courseName;}
-
-    public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.courseName = courseName;
     }
 
-    public void setCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    
 }
