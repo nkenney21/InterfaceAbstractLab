@@ -19,13 +19,10 @@ public abstract  class CourseStructure {
     private double credits;
 
     
-
-    
-
     
     
-    public final void setCourseName(String courseName){
-        this.setCourseName(courseName);
+    public void setCourseName(String courseName){
+        this.courseName = courseName;
         
     }
     
@@ -34,13 +31,13 @@ public abstract  class CourseStructure {
     }
     
      public final void setCourseNumber(String courseNumber) {
-      System.out.println(courseNumber);
+      
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
         }
-        
+        this.courseNumber = courseNumber;
     }
 
     public final String getCourseNumber() {
@@ -53,13 +50,17 @@ public abstract  class CourseStructure {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+        this.credits = credits;
     }
     
 
     public final double getCredits() {
         return credits;
     }
+
+   
+
+    
 
  
     
