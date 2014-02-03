@@ -16,9 +16,9 @@ public class AdvancedJavaCourse extends CourseStructure{
 
     
 
-//    public String getCapitalizedCourseName() {
-//        return this.getCourseName().toUpperCase();
-//    }
+    public String getCapitalizedCourseName() {
+        return this.getCourseName().toUpperCase();
+    }
 
 
     public String getPrerequisites() {

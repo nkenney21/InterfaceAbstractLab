@@ -24,16 +24,16 @@ public abstract  class CourseStructure {
 
     
     
-    public void setCourseName(String courseName){
+    public final void setCourseName(String courseName){
         this.setCourseName(courseName);
         
     }
     
-    public String getCourseName(){
+    public final String getCourseName(){
         return courseName;
     }
     
-     public void setCourseNumber(String courseNumber) {
+     public final void setCourseNumber(String courseNumber) {
       System.out.println(courseNumber);
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -43,11 +43,11 @@ public abstract  class CourseStructure {
         
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -57,7 +57,7 @@ public abstract  class CourseStructure {
     }
     
 
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 

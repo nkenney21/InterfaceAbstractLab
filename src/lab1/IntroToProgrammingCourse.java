@@ -12,9 +12,4 @@ import javax.swing.JOptionPane;
 public class IntroToProgrammingCourse extends CourseStructure{
     
 
-  
-
-   
-
-
-}
+  }
