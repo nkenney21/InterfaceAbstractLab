@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public interface ProgrammingCourse {
         
-    public String getCourseNumber();
+    public abstract String getCourseNumber();
     public abstract void setCourseNumber(String courseNumber);
     public abstract double getCredits();
     public abstract void setCredits(double credits);
