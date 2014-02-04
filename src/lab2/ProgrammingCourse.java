@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author neilkenney
  */
-public interface CourseStructure {
+public interface ProgrammingCourse {
         
     public String getCourseNumber();
     public abstract void setCourseNumber(String courseNumber);

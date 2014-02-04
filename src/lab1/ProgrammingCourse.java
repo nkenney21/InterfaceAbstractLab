@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author neilkenney
  */
-public abstract  class CourseStructure {
+public abstract  class ProgrammingCourse {
     
     private String courseName;
     private String courseNumber;
